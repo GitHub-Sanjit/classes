@@ -1,0 +1,23 @@
+{
+  "name": "classes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanjitweb479/classes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanjitweb479/classes/issues"
+  },
+  "homepage": "https://github.com/sanjitweb479/classes#readme",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
