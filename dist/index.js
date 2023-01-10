@@ -42,7 +42,20 @@ class SuperPlayer extends Player {
     }
 }
 const elton = new Player("Elton", "Steele", 67);
-// elton.first = "elton";
-// elton.secretMethod()
-// elton.fullName = "kjkgjfg";
-// elton.score='99'
+class Bike {
+    //   color = "red";
+    constructor(color) {
+        this.color = color;
+    }
+}
+class Jacket {
+    constructor(brand, color) {
+        this.brand = brand;
+        this.color = color;
+    }
+    print() {
+        console.log(`${this.color} ${this.brand} jacket`);
+    }
+}
+const bike1 = new Bike("red");
+const jacket1 = new Jacket("Prada", "Black");

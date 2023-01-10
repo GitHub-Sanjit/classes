@@ -51,3 +51,27 @@ const elton = new Player("Elton", "Steele", 67);
 // elton.secretMethod()
 // elton.fullName = "kjkgjfg";
 // elton.score='99'
+
+interface Colorful {
+  color: string;
+}
+
+interface Printable {
+  print(): void;
+}
+
+class Bike implements Colorful {
+  //   color = "red";
+  constructor(public color: string) {}
+}
+
+class Jacket implements Colorful, Printable {
+  constructor(public brand: string, public color: string) {}
+
+  print(): void {
+    console.log(`${this.color} ${this.brand} jacket`);
+  }
+}
+
+const bike1 = new Bike("red");
+const jacket1 = new Jacket("Prada", "Black");
