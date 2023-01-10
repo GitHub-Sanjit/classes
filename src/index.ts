@@ -14,12 +14,10 @@
 // }
 
 class Player {
-  //   private score: number = 0;
-
   constructor(
     public first: string,
     public last: string,
-    private _score: number
+    protected _score: number
   ) {}
 
   private secretMethod(): void {
@@ -38,6 +36,13 @@ class Player {
     if (newScore < 0) {
       throw new Error("Score Cannot Be Negative");
     }
+  }
+}
+
+class SuperPlayer extends Player {
+  public isAdmin: boolean = true;
+  maxScore() {
+    this._score = 999999;
   }
 }
 

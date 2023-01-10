@@ -12,7 +12,6 @@
 //   }
 // }
 class Player {
-    //   private score: number = 0;
     constructor(first, last, _score) {
         this.first = first;
         this.last = last;
@@ -31,6 +30,15 @@ class Player {
         if (newScore < 0) {
             throw new Error("Score Cannot Be Negative");
         }
+    }
+}
+class SuperPlayer extends Player {
+    constructor() {
+        super(...arguments);
+        this.isAdmin = true;
+    }
+    maxScore() {
+        this._score = 999999;
     }
 }
 const elton = new Player("Elton", "Steele", 67);
